@@ -5,7 +5,8 @@ name: Update Data
 # Define schedule
 on: 
   schedule:
-    - cron: '0 0 * * 6,0' # run Runs at 00:00, only on Saturday and Sunday.
+    - cron: '0 0 * * 6,0' # run at 00:00, only on Saturday and Sunday.
+  workflow_dispatch:
 
 # Define jobs to be executed
 jobs:
