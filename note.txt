@@ -1,0 +1,15 @@
+
+python -m venv penv
+source ./engineer/bin/activate
+pip install flask
+pip freeze
+deactivate
+pip freeze > requirements.txt
+python app.py
+
+1. Test scrape file works
+2. Create storage account and container on azure
+3. Push data to blob
+4. Push data to to db
+
+git config --global --unset-all
