@@ -11,10 +11,10 @@ load_dotenv()
 functions = [league_table,top_scorers,detail_top,player_table,all_time_table,all_time_winner_club,top_scorers_seasons,goals_per_season]
 
 
-#conn_string = os.getenv('CONN_STRING')
-#db = create_engine(conn_string)
+conn_string = os.getenv('CONN_STRING')
+db = create_engine(conn_string)
 
-url = URL.create(
+'''url = URL.create(
     drivername="postgresql",
     username=os.getenv('USER'),
     password=os.getenv('PASSWORD'),
@@ -23,7 +23,7 @@ url = URL.create(
     database="postgres"
 )
 
-db = create_engine(url)
+#db = create_engine(url)'''
 conn = db.connect() 
 
 

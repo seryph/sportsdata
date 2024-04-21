@@ -13,3 +13,10 @@ python app.py
 4. Push data to to db
 
 git config --global --unset-all
+
+
+conda info --envs
+conda create -n engineer 
+
+conda install --yes --file requirements.txt
+conda deactivate
